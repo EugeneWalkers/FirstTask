@@ -1,9 +1,8 @@
 package ew.firsttask;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,13 +13,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * this function makes nothing...
-     * @param s
+     * this function returns the length of the input string * 2
+     * @param inputString some input string
      * @author Evgeniy Skorohodov
      */
-    @Nullable
-    public void doSmth(String s){
-        Log.i("tag", s);
+    public int doSmth(@NonNull String inputString){
+        return inputString.length()*2;
     }
 
 }
